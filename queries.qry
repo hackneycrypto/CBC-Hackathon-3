@@ -1,0 +1,12 @@
+ query selectRetentionAccount {
+  description: "Select Retention Account"
+  statement: SELECT org.example.construction.Account
+              WHERE (accountID == 'Retention')
+ }
+
+ // example of selecting account by owner firstname
+ query selectJohn {
+  description: "Select Accounts owned by John"
+  statement: SELECT org.example.construction.Person
+              WHERE (firstName == 'John')
+ }
